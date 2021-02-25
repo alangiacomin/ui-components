@@ -1,6 +1,6 @@
 {
   "name": "@alangiacomin/ui-components",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "React UI components",
   "main": "src/index.js",
   "typings": "src/index.d.ts",
