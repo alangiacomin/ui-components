@@ -1,0 +1,89 @@
+{
+  "name": "@alangiacomin/ui-components",
+  "version": "1.0.0",
+  "description": "React UI components",
+  "main": "src/index.js",
+  "typings": "src/index.d.ts",
+  "scripts": {
+    "test": "jest --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alangiacomin/ui-components.git"
+  },
+  "keywords": [
+    "react",
+    "ui",
+    "components",
+    "javascript",
+    "js",
+    "frontend"
+  ],
+  "author": {
+    "name": "Alan Giacomin",
+    "email": "alan.giacomin@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "Alan Giacomin",
+      "email": "alan.giacomin@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alangiacomin/ui-components/issues"
+  },
+  "homepage": "https://github.com/alangiacomin/ui-components#readme",
+  "oldDep": {
+    "babel-eslint": "^9.0.0",
+    "babel-loader": "^8.1.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-react-app": "^5.2.1",
+    "eslint-plugin-babel": "^5.3.1",
+    "eslint-plugin-dependencies": "^2.4.0",
+    "eslint-plugin-flowtype": "^4.7.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.20.6",
+    "eslint-plugin-react-hooks": "^2.5.1",
+    "eslint-watch": "^7.0.0",
+    "history": "^4.10",
+    "i18next": "^19.8.4",
+    "i18next-browser-languagedetector": "^6.0.1",
+    "i18next-http-backend": "^1.0.21",
+    "import-glob-loader": "^1.1.0",
+    "react-i18next": "^11.8.5",
+    "react-redux": "^7.2.2",
+    "react-router-bootstrap": "^0.25.0",
+    "react-router-dom": "^5.2.0",
+    "redux-logger": "^3.0.6",
+    "regenerator": "^0.14.7",
+    "regenerator-runtime": "^0.13.7",
+    "simple-line-icons": "^2.5.5"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.13",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.5",
+    "formik": "^2.2.6",
+    "jest": "^26.6.3",
+    "prop-types": "15.7.2",
+    "react": "^16.0",
+    "react-bootstrap": "^1.4.0",
+    "react-dom": "^16.0",
+    "yup": "^0.31.1"
+  },
+  "engines": {
+    "node": ">= 12.16.1",
+    "npm": ">= 6.13.4"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "sideEffects": false
+}
