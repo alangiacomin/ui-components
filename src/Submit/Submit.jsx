@@ -4,20 +4,23 @@ import React from 'react';
 import { Button } from 'react-bootstrap';
 
 const Submit = (props) => {
-  const { text } = props;
+  const { children } = props;
   const { isSubmitting } = useFormikContext();
 
   return (
-    <Button type="submit" disabled={isSubmitting}>{text}</Button>
+    <Button type="submit" disabled={isSubmitting}>{children}</Button>
   );
 };
 
 Submit.propTypes = {
-  text: PropTypes.string,
+  children: PropTypes.oneOfType([
+    PropTypes.node,
+    PropTypes.arrayOf(PropTypes.node),
+  ]),
 };
 
 Submit.defaultProps = {
-  text: 'Submit',
+  children: 'Submit',
 };
 
 export default Submit;
