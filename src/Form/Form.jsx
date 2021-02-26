@@ -23,7 +23,7 @@ const Form = (props) => {
 
 Form.propTypes = {
   initialValues: PropTypes.shape({}),
-  validationSchema: PropTypes.instanceOf(yup.object),
+  validationSchema: PropTypes.shape(yup.object),
   onSubmit: PropTypes.func,
   children: PropTypes.oneOfType([
     PropTypes.node,
