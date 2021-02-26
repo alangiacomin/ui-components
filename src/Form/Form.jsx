@@ -4,7 +4,7 @@ import React from 'react';
 import * as yup from 'yup';
 
 const Form = (props) => {
-  const { initialValues, validationSchema, onSubmit, children } = props;
+  const { initialValues, validationSchema, onSubmit, children, ...others } = props;
 
   return (
     <Formik
@@ -13,7 +13,8 @@ const Form = (props) => {
       onSubmit={onSubmit}
     >
       {() => (
-        <FormikForm>
+        <FormikForm
+          {...others}>
           {children}
         </FormikForm>
       )}
