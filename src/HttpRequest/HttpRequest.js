@@ -62,7 +62,7 @@ const post = (url, data, options = {}) => {
     },
     data: data || [],
     ...options.cancelToken,
-    ...options.actions,
+    actions: { ...options.actions },
   })
     .then((result) => (returnFullResponse ? result : result.data));
 };
