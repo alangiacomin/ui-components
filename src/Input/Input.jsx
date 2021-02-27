@@ -7,13 +7,15 @@ import { Form } from 'react-bootstrap';
 const classNames = require('classnames/dedupe');
 
 const Input = (props) => {
-  const { name, placeholder, type, label, labelLeft, ...others } = props;
+  const {
+    name, placeholder, type, label, labelLeft, ...others
+  } = props;
 
   const labelClassName = classNames(
     {
       'd-inline': labelLeft,
       'mr-2': labelLeft,
-    }
+    },
   );
 
   return (

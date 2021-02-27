@@ -5,7 +5,7 @@ import Setup from './Submit';
 jest.mock('formik', () => ({
   useHistory: jest.fn(),
   withRouter: () => (comp) => comp,
-  useFormikContext: () => { isSubmitting: false }
+  useFormikContext: () => ({ isSubmitting: false }),
 }));
 
 describe('<Setup />', () => {
