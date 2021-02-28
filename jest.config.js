@@ -1,6 +1,7 @@
 module.exports = {
   collectCoverageFrom: [
-    'src/**/*.{js,jsx}',
+    'components/**/*.{js,jsx}',
+    'utils/**/*.{js,jsx}',
   ],
   coverageDirectory: 'Report',
   coveragePathIgnorePatterns: [

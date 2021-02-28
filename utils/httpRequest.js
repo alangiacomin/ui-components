@@ -7,6 +7,7 @@ axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 // Add a request interceptor
 axios.interceptors.request.use((config) => {
   config.actions
+    && config.actions.executePendingAction
     && config.actions.executePendingAction();
   return config;
 });
@@ -15,6 +16,7 @@ axios.interceptors.request.use((config) => {
 axios.interceptors.response.use(
   (response) => {
     response.config.actions
+      && response.config.actions.executeFulfilledAction
       && response.config.actions.executeFulfilledAction();
     return response;
   },
@@ -77,7 +79,7 @@ const createActions = (actionName) => ({
   rejectedAction: createRejectedAction(actionName),
 });
 
-const HttpRequest = {
+const httpRequest = {
   get,
   post,
   useActions,
@@ -87,4 +89,4 @@ const HttpRequest = {
   createRejectedAction,
 };
 
-export default HttpRequest;
+export default httpRequest;
