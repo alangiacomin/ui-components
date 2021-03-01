@@ -1,9 +1,9 @@
 import React, { lazy, Suspense } from 'react';
 
-const lazyImport = (func) => {
+const lazyImport = (func, fallback) => {
   const Component = lazy(func);
   return (props) => (
-    <Suspense fallback={null}>
+    <Suspense fallback={fallback || null}>
       <Component {...props} />
     </Suspense>
   );
