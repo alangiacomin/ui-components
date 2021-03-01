@@ -91,12 +91,6 @@
   "license": "MIT",
   "main": "index.js",
   "typings": "index.d.ts",
-  "files": [
-    "index.js",
-    "index.d.ts",
-    "components/**/*",
-    "utils/**/*"
-  ],
   "name": "@alangiacomin/ui-components",
   "oldDep": {
     "babel-loader": "^8.1.0",
