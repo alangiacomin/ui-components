@@ -127,5 +127,5 @@
     "typings": "copy index.js index.d.ts"
   },
   "sideEffects": false,
-  "version": "1.0.6"
+  "version": "1.0.7"
 }
