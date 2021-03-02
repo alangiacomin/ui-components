@@ -118,12 +118,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alangiacomin/ui-components.git"
+    "url": "https://github.com/alangiacomin/ui-components.git"
   },
   "scripts": {
     "lint": "eslint --ext .jsx components/**/*.{js,jsx} utils/**/*.{js,jsx}",
     "lint:watch": "esw --watch --color --ext .jsx components/**/*.{js,jsx} utils/**/*.{js,jsx}",
-    "test": "jest --verbose"
+    "test": "jest --verbose",
+    "typings": "copy index.js index.d.ts"
   },
   "sideEffects": false,
   "version": "1.0.6"
