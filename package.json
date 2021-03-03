@@ -100,9 +100,10 @@
     "lint:watch": "esw --watch --color --ext .jsx src/**/*.{js,jsx}",
     "test": "jest --verbose",
     "typings": "copy index.js index.d.ts",
-    "v:patch": " npm version patch && git push origin master --tags && npm run v:publish",
+    "v:patch": "npm run createIndex && npm version patch && git push origin master --tags && npm run v:publish",
     "v:publish": "npm publish --access public",
-    "util": "mkdir src\\utils\\%npm_config_name% && echo.>src\\utils\\%npm_config_name%\\%npm_config_name%.js && echo.>src\\utils\\%npm_config_name%\\%npm_config_name%.test.js"
+    "util": "mkdir src\\utils\\%npm_config_name% && echo.>src\\utils\\%npm_config_name%\\%npm_config_name%.js && echo.>src\\utils\\%npm_config_name%\\%npm_config_name%.test.js",
+    "createIndex": "node scripts/createIndex.js"
   },
   "sideEffects": false,
   "version": "1.0.10"
