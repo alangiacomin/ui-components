@@ -105,5 +105,5 @@
     "util": "mkdir src\\utils\\%npm_config_name% && echo.>src\\utils\\%npm_config_name%\\%npm_config_name%.js && echo.>src\\utils\\%npm_config_name%\\%npm_config_name%.test.js"
   },
   "sideEffects": false,
-  "version": "1.0.9"
+  "version": "1.0.10"
 }
