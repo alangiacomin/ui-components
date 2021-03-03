@@ -106,5 +106,5 @@
     "createIndex": "node scripts/createIndex.js"
   },
   "sideEffects": false,
-  "version": "1.0.11"
+  "version": "1.0.12"
 }
