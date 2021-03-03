@@ -9,8 +9,8 @@ const exportComponents = (folder, indexFile) => {
     if (stat.isFile()) {
       if (!filePath.endsWith('.test.js') && !filePath.endsWith('.test.jsx')) {
         const exportName = path.parse(filePath).name;
-        const exportPath = './' + filePath.replace(/\\/g, '/');
-        const rigaExport = 'export {default as ' + exportName + "} from '" + exportPath + "';\n";
+        const exportPath = './' + filePath.replace(/\\/g, '/').replace(/\.jsx?$/g, '');
+        const rigaExport = 'export { default as ' + exportName + " } from '" + exportPath + "';\n";
         fs.appendFileSync(indexFile, rigaExport);
       }
     } else if (stat.isDirectory()) {
