@@ -96,12 +96,13 @@
     "url": "https://github.com/alangiacomin/ui-components.git"
   },
   "scripts": {
-    "lint": "eslint --ext .jsx components/**/*.{js,jsx} utils/**/*.{js,jsx}",
-    "lint:watch": "esw --watch --color --ext .jsx components/**/*.{js,jsx} utils/**/*.{js,jsx}",
+    "lint": "eslint --ext .jsx src/**/*.{js,jsx}",
+    "lint:watch": "esw --watch --color --ext .jsx src/**/*.{js,jsx}",
     "test": "jest --verbose",
     "typings": "copy index.js index.d.ts",
-    "v:patch": " npm version patch && git push origin master --tags",
-    "v:publish": "npm publish --access public"
+    "v:patch": " npm version patch && git push origin master --tags && npm run v:publish",
+    "v:publish": "npm publish --access public",
+    "util": "mkdir src\\utils\\%npm_config_name% && echo.>src\\utils\\%npm_config_name%\\%npm_config_name%.js && echo.>src\\utils\\%npm_config_name%\\%npm_config_name%.test.js"
   },
   "sideEffects": false,
   "version": "1.0.9"
