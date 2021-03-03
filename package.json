@@ -1,29 +1,4 @@
 {
-  "_from": "@alangiacomin/ui-components@1.0.2",
-  "_id": "@alangiacomin/ui-components@1.0.2",
-  "_inBundle": false,
-  "_integrity": "sha512-n/hsbJvvm9zlcHJwVO+rasFNbK5roQPwLlP5zHcGy/om6hU0Sd9GH0AT1XyCY8giDQ/XrLr2Tz5pVetgxlbXOA==",
-  "_location": "/@alangiacomin/ui-components",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "version",
-    "registry": true,
-    "raw": "@alangiacomin/ui-components@1.0.2",
-    "name": "@alangiacomin/ui-components",
-    "escapedName": "@alangiacomin%2fui-components",
-    "scope": "@alangiacomin",
-    "rawSpec": "1.0.2",
-    "saveSpec": null,
-    "fetchSpec": "1.0.2"
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/@alangiacomin/ui-components/-/ui-components-1.0.2.tgz",
-  "_shasum": "d4f3bfe73420ed6a23db627086898941865944a6",
-  "_spec": "@alangiacomin/ui-components@1.0.2",
-  "_where": "F:\\xampp\\htdocs\\forms",
   "author": {
     "name": "Alan Giacomin",
     "email": "alan.giacomin@gmail.com"
@@ -124,7 +99,9 @@
     "lint": "eslint --ext .jsx components/**/*.{js,jsx} utils/**/*.{js,jsx}",
     "lint:watch": "esw --watch --color --ext .jsx components/**/*.{js,jsx} utils/**/*.{js,jsx}",
     "test": "jest --verbose",
-    "typings": "copy index.js index.d.ts"
+    "typings": "copy index.js index.d.ts",
+    "v:patch": " npm version patch && git push origin master --tags",
+    "v:publish": "npm publish --access public"
   },
   "sideEffects": false,
   "version": "1.0.8"
